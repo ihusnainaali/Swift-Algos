@@ -2,14 +2,20 @@
 
 import UIKit
 
-var str = "Hello, playground"
+var str = "Lets start building a sentence for testing reverse word in a complete sentence"
 
 
-func reverseEveryWordInGivenString(string:String) -> String {
+func reverseEveryWordInGivenString(sentence:String) -> String {
     
+    let allWorlds = sentence.components(separatedBy: " ")
+    print(allWorlds)
+    
+    for word in allWorlds {
+        
+    }
     
     return ""
 }
 
 
-print(reverseEveryWordInGivenString(string: str))
+print(reverseEveryWordInGivenString(sentence: str))
