@@ -10,10 +10,13 @@ func reverseEveryWordInGivenString(sentence:String) -> String {
     let allWorlds = sentence.components(separatedBy: " ")
     print(allWorlds)
     
+    var reverseSentence = ""
     for word in allWorlds {
-        
+        let newWord = word.reversed()
+        reverseSentence += newWord
+        reverseSentence += " "
     }
-    
+    print(reverseSentence)
     return ""
 }
 
