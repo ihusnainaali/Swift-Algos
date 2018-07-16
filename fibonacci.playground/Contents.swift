@@ -1,21 +1,44 @@
 // 011235813
 
-var str = "Hello, playground"
+/// First thought
+
+//func fibonacciStringFromGivenNumber(num:Int) -> [Int] {
+//
+//    var a=0, b=1
+//    var fibonacciArray = [Int]()
+//    fibonacciArray.append(a)
+//    fibonacciArray.append(b)
+//    for _ in 0...num {
+//        let sum = a+b
+//        fibonacciArray.append(sum)
+//        a = b
+//        b = sum
+//    }
+//
+//    return fibonacciArray
+//}
+//
+//print(fibonacciStringFromGivenNumber(num: 5))
+
+
+
+//=================== Improved version ==============================
 
 func fibonacciStringFromGivenNumber(num:Int) -> [Int] {
     
-    var a=0, b=1
-    var fibonacciArray = [Int]()
-    fibonacciArray.append(a)
-    fibonacciArray.append(b)
+    var sequence = [0, 1]
     for _ in 0...num {
-        let sum = a+b
-        fibonacciArray.append(sum)
-        a = b
-        b = sum
+        let first = sequence[sequence.count-2]
+        let last = sequence.last!
+        sequence.append(first+last)
     }
     
-    return fibonacciArray
+    return sequence
 }
-
 print(fibonacciStringFromGivenNumber(num: 5))
+
+
+
+
+
+
