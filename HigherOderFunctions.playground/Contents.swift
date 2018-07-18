@@ -15,3 +15,12 @@ print(decendingSort)
 let ascendingSort = numbers.sorted(by: <)
 print(ascendingSort)
 
+
+// Map Function
+
+let stringifyNumbers = numbers.map {String($0)}
+print(stringifyNumbers)
+
+let computedNumbers = numbers.map {($0*2)}
+print(computedNumbers)
+
