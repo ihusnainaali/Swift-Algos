@@ -1,7 +1,7 @@
 
 let tracks = ["a", "b", "c", "d", "e", "f", "g"]
 //
-//let selectedTracks = "d"
+let selectedTracks = "d"
 //var outputArr = [String]()
 //var previousArr = [String]()
 //
@@ -18,8 +18,10 @@ let tracks = ["a", "b", "c", "d", "e", "f", "g"]
 
 // ====================================== Improved version =================================
 
-let prefixTracks = tracks.prefix(upTo: 3)
-let suffixTracks = tracks.suffix(from: 3)
+let index = tracks.index(of:selectedTracks)
+
+let prefixTracks = tracks.prefix(upTo: index!)
+let suffixTracks = tracks.suffix(from: index!)
 
 print (suffixTracks + prefixTracks)
 
