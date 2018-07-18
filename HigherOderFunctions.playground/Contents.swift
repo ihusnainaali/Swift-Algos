@@ -24,3 +24,17 @@ print(stringifyNumbers)
 let computedNumbers = numbers.map {($0*2)}
 print(computedNumbers)
 
+let numbersgreaterThanTwo = numbers.map({$0>2})
+print(numbersgreaterThanTwo)
+
+
+// filter function
+let devideComputedArrayBytwo = computedNumbers.filter({return $0/2 == 1})
+print(devideComputedArrayBytwo)
+
+let numberGreaterThanFive = numbers.filter({$0>5})
+print(numberGreaterThanFive)
+/// Note: devideComputedArrayBytwo is nonMutable Array
+
+
+
