@@ -45,6 +45,20 @@ print(reducedNumber)
 let reducedTest = numbers.reduce("", {$0 + String($1)})
 print(reducedTest)
 
+// flatmap function
+
+let arrayInArray = [[11, 12, 13],[14, 15, 16]]
+let flattenArray  = arrayInArray.flatMap{$0}
+print(flattenArray)
+
+
+// Chaining ==> Using multiple Higher Order Functions simultaneously
+
+let chainingResult = arrayInArray.flatMap {$0}.filter{$0%2 == 0}.map{$0*$0}
+chainingResult.reduce(0, +)
+print(chainingResult)
+
+
 
 
 
