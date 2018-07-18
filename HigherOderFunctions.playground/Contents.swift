@@ -37,4 +37,14 @@ print(numberGreaterThanFive)
 /// Note: devideComputedArrayBytwo is nonMutable Array
 
 
+// reduce funtion
+
+let reducedNumber = numbers.reduce(0, {sum, number in sum + number})
+print(reducedNumber)
+
+let reducedTest = numbers.reduce("", {$0 + String($1)})
+print(reducedTest)
+
+
+
 
