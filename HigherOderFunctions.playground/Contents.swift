@@ -46,11 +46,13 @@ let reducedTest = numbers.reduce("", {$0 + String($1)})
 print(reducedTest)
 
 // flatmap function
+// flatmap function has been renamed to compactmap in SWift 4.1
 
 let arrayInArray = [[11, 12, 13],[14, 15, 16]]
 let flattenArray  = arrayInArray.flatMap{$0}
+//let compactMap = arrayInArray.compactMap{$0}
 print(flattenArray)
-
+//print(compactMap)
 
 // Chaining ==> Using multiple Higher Order Functions simultaneously
 
