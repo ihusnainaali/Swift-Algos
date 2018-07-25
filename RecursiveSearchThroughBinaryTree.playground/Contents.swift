@@ -22,7 +22,6 @@ class Node {
     }
 }
 
-
 // Left Child
 
 let oneNode = Node(value: 1, leftChild: nil, rightChild: nil)
@@ -50,7 +49,7 @@ func search(node:Node?, searchValue:Int) -> Bool {
     }
 }
 
-print (search(node: tenRootNode, searchValue: 5))
+print (search(node: tenRootNode, searchValue: 20))
 
 
 
