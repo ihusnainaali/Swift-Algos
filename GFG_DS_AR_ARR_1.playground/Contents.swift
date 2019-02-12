@@ -1,5 +1,6 @@
 // problem link
-// https://www.geeksforgeeks.org/array-rotation/
+//1.  https://www.geeksforgeeks.org/array-rotation/
+//2.  https://www.geeksforgeeks.org/program-for-array-rotation-continued-reversal-algorithm/
 
 
 let inputArr = ["1", "2", "3", "4", "5", "6", "7"]
